@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- The 'node' is the the content-entity in Drupal. -->
+    <meta name="node-id" content="5316"/>
+    <meta name="revision-id" content="34088"/>
+    <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"/>
+    <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/msaviewer/legend"/>
+    <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/5316/edit"/>
+    <meta name="created" content="2016-05-05T17:02:27-04:00"/>
+    <meta name="modified" content="2016-05-05T17:02:27-04:00"/>
+    <meta name="publication-date" content="2016-05-05T17:01:00-04:00"/>
+    <meta name="author" content="doubintc"/> 
+    <meta name="subsite" content="msaviewer"/>
+    <meta name="path" content="msaviewer/legend"/>
+    <meta name="node-type" content="page"/>
+    <meta name="jira-ticket" content=""/>
+    <meta name="cms-tags" content=""/>
+
+    <!-- User-defined meta tags -->
+    <meta name="" content=""/>
+        
+    
+                                    <link type="text/css" rel="stylesheet" href="/core/assets/msaviewer/css/msaviewerdocs.css"/>
+            
+
+    <title>Legend</title>
+  </head>
+  <body>
+    <div class="node clear-block">
+
+
+
+  <div class="content">
+    <h1>Legend</h1>
+
+<p>Under construction</p>  </div>
+
+  
+  </div>
+
+                                <div id="shared-content-1" nid="4988">                <h2>
+Table of Contents</h2>
+<ul>
+<li><a href="/projects/msaviewer/">Multiple Sequence Alignment Viewer application</a></li>
+<li><a href="/tools/msaviewer/">Documentation home</a></li>
+<li>General
+<ul>
+<li><a href="/tools/msaviewer/about/">About</a></li>
+
+<li>
+<a href="/tools/msaviewer/embedding-api/">MSA Viewer Embedding API</a></li>
+<li>
+<a href="/tools/msaviewer/release-notes/">Release Notes</a></li>
+</ul>
+</li>
+<li>
+Help
+<ul>
+<li>
+<a href="/tools/msaviewer/faq/">Frequently Asked Questions</a></li>
+<li>
+<a href="/tools/msaviewer/video/">Video Tutorials</a></li>
+<li><a href="/tools/msaviewer/legend/">Legend</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+
+<li>
+Demo Pages
+<ul>
+<li>
+<a href="/projects/msaviewer/demo_static.html">Static Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_dynamic.html">Dynamic Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_sv.html">Interaction with Sequence Viewer</a></li>
+<li>
+<a href="/projects/msaviewer/demo_events.html">Event Handling</a></li>
+<li>
+<a href="/projects/msaviewer/demo_coloring.html">Coloring</a></li>
+<li>
+<a href="/projects/msaviewer/demo_mapping.html">Alignment Coordinate Transformation</a></li>
+</ul>
+</li>
+<li>
+Tutorials
+<ul>
+<li>
+<a href="/tools/msaviewer/tutorial1">Getting Started</a></li>
+</ul>
+</li>
+
+<li>
+Other Resources
+<ul>
+<li>
+<a href="/tools/gbench/">Genome Workbench</a></li>
+<li>
+<a href="/projects/sviewer/">Sequence Viewer</a></li>
+<li>
+<a href="/projects/treeview/">Tree Viewer</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+</ul>
+            </div>
+                        
+  </body>
+</html>

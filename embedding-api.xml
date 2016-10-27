@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- The 'node' is the the content-entity in Drupal. -->
+    <meta name="node-id" content="5313"/>
+    <meta name="revision-id" content="37206"/>
+    <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"/>
+    <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/msaviewer/embedding-api"/>
+    <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/5313/edit"/>
+    <meta name="created" content="2016-05-04T16:59:09-04:00"/>
+    <meta name="modified" content="2016-10-06T15:31:47-04:00"/>
+    <meta name="publication-date" content="2016-05-04T16:57:00-04:00"/>
+    <meta name="author" content="doubintc"/> 
+    <meta name="subsite" content="msaviewer"/>
+    <meta name="path" content="msaviewer/embedding-api"/>
+    <meta name="node-type" content="page"/>
+    <meta name="jira-ticket" content=""/>
+    <meta name="cms-tags" content=""/>
+
+    <!-- User-defined meta tags -->
+    <meta name="" content=""/>
+        
+    
+                                    <link type="text/css" rel="stylesheet" href="/core/assets/msaviewer/css/msaviewerdocs.css"/>
+            
+
+    <title>MSA Viewer Embedding API</title>
+  </head>
+  <body>
+    <div class="node clear-block">
+
+
+
+  <div class="content">
+    <h1>
+NCBI Multiple Sequence Alignment Viewer Embedding API</h1>
+<hr />
+<p>
+Document Update Date: 06/27/2016</p>
+<p>
+MSA Viewer Revision: 1.0</p>
+<p>
+Contact: sviewer-service AT ncbi.nlm.nih.gov</p>
+<hr />
+<h2 id="introduction">
+Introduction</h2>
+<p>
+The NCBI Multiple Sequence Alignment Viewer (MSAV) is a general purpose tool for viewing multiple alignments of biological sequences. It can be embedded in a wide variety of web pages and with a large number of options. This document serves as a launching point to understand how to embed the Multiple Sequence Alignment Viewer in any context. For purposes of standardization in this document, all links presented include the common refrain <a href="https://www.ncbi.nlm.nih.gov">https://www.ncbi.nlm.nih.gov</a>.</p>
+<p>
+For questions please contact: sviewer-service AT ncbi.nlm.nih.gov</p>
+<p>
+Additional documentation can be found at: <a href="http://www.ncbi.nlm.nih.gov/tools/msaviewer">http://www.ncbi.nlm.nih.gov/tools/msaviewer</a></p>
+<h2 id="including">
+Including Multiple Sequence Alignment Viewer into a web page</h2>
+<p>
+The Multiple Sequence Viewer is a component which can be embedded on internal NCBI as well as external Web page.</p>
+<p>
+The Viewer is implemented using ExtJS JavaScript library version 5.0.1. There are some rules to follow when including the Viewer as a component on a page.</p>
+<ol>
+<li>
+There is no need to declare or load ExtJS css files or js scripts. MSAV dynamically loads everything it needs from www.ncbi.nlm.nin.com website. On the other hand if ExtJS scripts are declared/loaded before multialign.js declaration MSAV omits their loading so this allows an embedding application to use a specific edition of the library (compatible to version 5.0.1). The following example demonstrate how to declare MSAV script:<br />
+<p class="code">
+&#60;script type=&#34;text/javascript&#34;<br />
+src=&#34;https://www.ncbi.nlm.nih.gov/projects/msaviewer/js/multialign.js&#34;&#62;&#60;/script&#62;</p>
+</li>
+<li>
+If an embedding application does not create MSAV instances dynamically MSAV application finds appropriate MultiAlignViewerApp declarations and create instances automatically (with data loading). For this the &#8216;div&#8217; element should have class=&#39;MultiAlignViewerApp&#39; and extra attribute &#8216;data-autoload&#8217;, and &#8216;a&#8217; element inside &#8216;div&#8217; with &#8216;href&#8217; attribute containing MSA Viewer parameters. An example is:
+<p class="code">
+&#60;div id=&#39;some-id&#39; class=&#39;MultiAlignViewerApp&#39; data-autoload&#62;<br />
+&#160; &#160; &#60;a href=&#39;?embedded=true&#38;id=&#8230;&#39;&#62;&#60;a&#62;<br />
+&#60;/div&#62;</p>
+<p>
+Please pay attention to the question mark at the beginning of &#8216;href&#8217; argument. It is a syntax dictated by Web browsers and is obligatory.</p>
+<p>
+Do not use this method if the Multiple Sequence Alignment Viewer div is initially hidden - it breaks all the logic as the Viewer needs to have real coordinate for proper rendering. Use method from point 3 to instantiate Multiple Sequence Alignment Viewer dynamically.</p>
+</li>
+<li>
+If an embedding application needs to create MSAV instances dynamically the following example demonstrates how to declare them and initiate MSAV instances creation and loading:
+<p class="code">
+&#60;div id=&#8217;msav1&#8217;&#62;&#60;/div&#62;<br />
+...<br />
+&#60;script type=&#39;text/javascript&#39;&#62;<br />
+MultiAlignViewOnReady(function()<br />
+{ var app = new MultiAlignView.App(&#8216;msav1&#8217;); app.load(&#8216;embedded=true&#38;id=&#8230;&#8217;); }<br />
+);<br />
+&#60;/script&#62;</p>
+</li>
+<li>
+Function MultiAlignViewOnReady(callback, [scope]) is designed to prevent MSAV usage before MultiAlignView class is initialized.
+<p>
+Parameters:<br />
+<strong>callback</strong> - user callback function<br />
+<strong>scope</strong> - callback function scope (if necessary)</p>
+</li>
+</ol>
+<h2 id="dataformats">
+Data Formats Supported</h2>
+<p>
+NCBI ASN.1 data containing alignment objects.</p>
+<p>
+BLAST RID &#8211; request id of submission of a sequence to NCBI BLAST service.</p>
+<p>
+MUSCLE &#8211; external format (to be implemented), result of run of MUSCLE tool (<a href="https://www.drive5.com/muscle/">https://www.drive5.com/muscle/</a>).</p>
+<h2 id="parameters">
+Multiple Sequence Alignment Viewer Parameters</h2>
+<p>
+Parameters may be passed to Multiple Sequence Alignment Viewer by putting them in the included &#60;a href=&#39;&#39;&#62; link tag within the MSA Viewer &#60;div&#62; tag.</p>
+<p>
+<strong>appname </strong>&#8211; it&#8217;s a way to identify who is using the component. It&#8217;s a mandatory parameter which should be unique for your application. If you plan to embed MSA Viewer on your page please email us at sviewer-service AT ncbi.nlm.nih.gov with suggested load so that we can plan our resource allocation.</p>
+<p>
+One of the following parameters MUST be present as a source of alignment data:<br />
+<strong>id</strong> &#8211; id of the sequence which has alignment data, can be gi or accession<br />
+<strong>rid</strong> &#8211; BLAST RID for already finished job<br />
+<strong>url</strong> &#8211; URL pointing to the data file<br />
+<strong>key</strong> &#8211; key for the data stored at NCBI after user data upload. Usually visible in URL produced by applications<br />
+<strong>master</strong> &#8211; the id of a row to be selected as master<br />
+<strong>scoring</strong> &#8211; scoring method, to be implemented</p>
+<p>
+There are two alternative ways to set a visible range for the view:<br />
+<strong>f</strong> &#8211; from, 1-based position of the beginning of the view<br />
+<strong>t</strong> &#8211; to, 1-based position of the end of the view<br />
+or<br />
+<strong>v</strong> &#8211; view range, 1-based range in the format from:to</p>
+<h2 id="events">
+Events Sent by MSAV Instance</h2>
+<p>
+An application that uses MSAV can subscribe to events that MSAV will send in case of a user interaction with MSAV. Here is the list of supported events with parameters passed in each event.</p>
+<p>
+<strong>&#39;graphical_image_loaded&#39;</strong> - fired when graphical image is loaded to view<br />
+view &#8211; view object of the just loaded image</p>
+<p>
+<strong>&#39;visible_range_changed&#39;</strong> - fired when visible range is changed (for example, zoom or shift)<br />
+range &#8211; array with [from, to, len] of the sequence or alignment visible</p>
+<p>
+<strong>&#39;selection_changed&#39;</strong> - fired when the selection is changed<br />
+rows &#8211; array of row ids selected</p>
+<p>
+<strong>&#39;master_changed&#39;</strong> - fired when the master is set/unset<br />
+row_id &#8211; row id of new master or null if master is unset</p>
+<p>
+<strong>&#39;coloring_changed&#39;</strong> - fired when coloring of the alignment is changed<br />
+coloring &#8211; what specific coloring is applied</p>
+<h2>
+Functions</h2>
+<p>
+<strong>MultiAlignView.App.getApps()</strong> &#8211; get array with all app objects</p>
+<p>
+<strong>MultiAlignView.App.findAppByIndex(num)</strong> &#8211; find an app by its ordinal number</p>
+<p>
+<strong>MultiAlignView.App.findAppByDivId(id)</strong> &#8211; find an app instantiated in div with given id</p>
+<h2>
+App Methods</h2>
+<p>
+<strong>getRows(fSelected)</strong> &#8211; get array of all or only selected rows</p>
+<p>
+<strong>selectRow(row_id, fSelect)</strong> &#8211; select or unselect row with row_id</p>
+<p>
+<strong>getMaster</strong> &#8211; get currently set master or null if unset</p>
+<p>
+<strong>setMaster(row_id)</strong> &#8211; set master</p>
+<p>
+<strong>getRowInfo(row_id)</strong> &#8211; returns object with following fields (can be extended in the future):<br />
+<strong>id</strong> &#8211; sequence id for the row<br />
+<strong>start </strong>&#8211; start of the sequence in the alignment<br />
+<strong>end </strong>&#8211; end of the sequence in the alignment</p>
+<p id="setcoloring">
+<strong>setColoring(coloring)</strong> &#8211; set coloring, one of the following:</p>
+<p>
+Value Description:<br />
+<strong>disable </strong>- Disable alignment score coloration<br />
+<strong>fbd </strong>&#8211; DNA/Protein: Score residues based on their frequency in the column<br />
+<strong>diff </strong>&#8211; DNA/Protein: Score residues based on match/mismatch to a master/anchor row<br />
+<strong>na </strong>&#8211; DNA: Assign color based on residue (A &#8211; Red, G &#8211; Blue, C &#8211; Yellow, T &#8211; Green)<br />
+<strong>cq_na</strong> &#8211; DNA: Score residues based on how well a particular residue agrees with the others in a column<br />
+<strong>cq_aa </strong>&#8211; Protein: Score residues based on how well a particular residue agrees with the others in a column.<br />
+<strong>rasmol </strong>&#8211; Protein: Used by the application RasMol to group amino acids with similar properties<br />
+<strong>shapely </strong>&#8211; Protein: Used by the application RasMol to group amino acids with similar shapes using a standard color table<br />
+<strong>blosum45 </strong>&#8211; Protein: Matrix made by matblas from blosum45.iij BLOSUM Clustered Scoring Matrix in 1/3 Bit Units<br />
+<strong>blosum62 </strong>&#8211; Protein: Matrix made by matblas from blosum62.iij BLOSUM Clustered Scoring Matrix in 1/2 Bit Units<br />
+<strong>blosum80 </strong>&#8211; Protein: Matrix made by matblas from blosum80.iij BLOSUM Clustered Scoring Matrix in 1/2 Bit Units<br />
+<strong>hydropathy </strong>&#8211; Protein: Side chain hydropathy, corrected for solvation<br />
+<strong>membrane </strong>&#8211; Protein: Membrane-buried preference parameters<br />
+<strong>signal </strong>&#8211; Protein: Signal sequence helical potential<br />
+<strong>size</strong> &#8211; Protein: Amino acid size</p>
+<p>
+<strong>getColoring()</strong> &#8211; returns current coloring.</p>
+<h2>
+Embedding Demos</h2>
+<p>
+<a href="/projects/msaviewer/demo_static.html">Static Embedding Demo</a></p>
+<p>
+<a href="/projects/msaviewer/demo_dynamic.html">Dynamic Embedding Demo</a></p>
+<p>
+<a href="/projects/msaviewer/demo_sv.html">Interaction with Sequence Viewer Demo</a></p>
+<p>
+<a href="/projects/msaviewer/demo_events.html">Event Handling Demo</a></p>
+<p>
+<a href="/projects/msaviewer/demo_coloring.html">Coloring Demo</a></p>
+<p>
+<a href="/projects/msaviewer/demo_mapping.html">Alignment Coordinate Transformation Demo</a></p>  </div>
+
+  
+  </div>
+
+                                <div id="shared-content-1" nid="4988">                <h2>
+Table of Contents</h2>
+<ul>
+<li><a href="/projects/msaviewer/">Multiple Sequence Alignment Viewer application</a></li>
+<li><a href="/tools/msaviewer/">Documentation home</a></li>
+<li>General
+<ul>
+<li><a href="/tools/msaviewer/about/">About</a></li>
+
+<li>
+<a href="/tools/msaviewer/embedding-api/">MSA Viewer Embedding API</a></li>
+<li>
+<a href="/tools/msaviewer/release-notes/">Release Notes</a></li>
+</ul>
+</li>
+<li>
+Help
+<ul>
+<li>
+<a href="/tools/msaviewer/faq/">Frequently Asked Questions</a></li>
+<li>
+<a href="/tools/msaviewer/video/">Video Tutorials</a></li>
+<li><a href="/tools/msaviewer/legend/">Legend</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+
+<li>
+Demo Pages
+<ul>
+<li>
+<a href="/projects/msaviewer/demo_static.html">Static Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_dynamic.html">Dynamic Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_sv.html">Interaction with Sequence Viewer</a></li>
+<li>
+<a href="/projects/msaviewer/demo_events.html">Event Handling</a></li>
+<li>
+<a href="/projects/msaviewer/demo_coloring.html">Coloring</a></li>
+<li>
+<a href="/projects/msaviewer/demo_mapping.html">Alignment Coordinate Transformation</a></li>
+</ul>
+</li>
+<li>
+Tutorials
+<ul>
+<li>
+<a href="/tools/msaviewer/tutorial1">Getting Started</a></li>
+</ul>
+</li>
+
+<li>
+Other Resources
+<ul>
+<li>
+<a href="/tools/gbench/">Genome Workbench</a></li>
+<li>
+<a href="/projects/sviewer/">Sequence Viewer</a></li>
+<li>
+<a href="/projects/treeview/">Tree Viewer</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+</ul>
+            </div>
+                        
+  </body>
+</html>

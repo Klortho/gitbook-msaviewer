@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- The 'node' is the the content-entity in Drupal. -->
+    <meta name="node-id" content="4962"/>
+    <meta name="revision-id" content="35053"/>
+    <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"/>
+    <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/msaviewer/_nav"/>
+    <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4962/edit"/>
+    <meta name="created" content="2015-11-20T15:38:02-05:00"/>
+    <meta name="modified" content="2016-07-05T16:14:17-04:00"/>
+    <meta name="publication-date" content="2015-11-20T15:37:00-05:00"/>
+    <meta name="author" content="frishber"/> 
+    <meta name="subsite" content="msaviewer"/>
+    <meta name="path" content="msaviewer/_nav"/>
+    <meta name="node-type" content="page"/>
+    <meta name="jira-ticket" content=""/>
+    <meta name="cms-tags" content=""/>
+
+    <!-- User-defined meta tags -->
+    <meta name="" content=""/>
+        
+    
+    
+
+    <title>nav</title>
+  </head>
+  <body>
+    <div class="node clear-block">
+
+
+
+  <div class="content">
+    <ul>
+<li>
+<a href="#">MSA Viewer</a>
+<ul>
+<li>
+<a href="/projects/msaviewer/">Multiple Sequence Alignment Viewer application</a></li>
+</ul>
+</li>
+<li>
+<a href="#">General</a>
+<ul>
+<li>
+<a href="/tools/msaviewer/about/">About</a></li>
+<li>
+<a href="/tools/msaviewer/embedding-api/">MSA Viewer Embedding API</a></li>
+<li>
+<a href="/tools/msaviewer/release-notes/">Release Notes</a></li>
+</ul>
+</li>
+<li>
+<a href="#">Help</a>
+<ul>
+<li>
+<a href="/tools/msaviewer/faq/">Frequently Asked Questions</a></li>
+<li>
+<a href="/tools/msaviewer/video/">Video Tutorials</a></li>
+<li>
+<a href="/tools/msaviewer/legend/">Legend</a></li>
+</ul>
+</li>
+<li>
+<a href="#">Demo Pages</a>
+<ul>
+<li>
+<a href="/projects/msaviewer/demo_static.html">Static Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_dynamic.html">Dynamic Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_sv.html">Interaction with Sequence Viewer</a></li>
+<li>
+<a href="/projects/msaviewer/demo_events.html">Event Handling</a></li>
+<li>
+<a href="/projects/msaviewer/demo_coloring.html">Coloring</a></li>
+<li>
+<a href="/projects/msaviewer/demo_mapping.html">Alignment Coordinate Transformation</a></li>
+</ul>
+</li>
+<li>
+<a href="#">Tutorials</a>
+<ul>
+<li>
+<a href="/tools/msaviewer/tutorial1">Getting Started</a></li>
+</ul>
+</li>
+<li>
+<a href="#">Other Resources</a>
+<ul>
+<li>
+<a href="/tools/gbench/">Genome Workbench</a></li>
+<li>
+<a href="/projects/sviewer/">Sequence Viewer</a></li>
+<li>
+<a href="/projects/treeview/">Tree Viewer</a></li>
+</ul>
+</li>
+</ul>  </div>
+
+  
+  </div>
+
+                                <div id="shared-content-1" nid="">                            </div>
+                        
+  </body>
+</html>

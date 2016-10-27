@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- The 'node' is the the content-entity in Drupal. -->
+    <meta name="node-id" content="4959"/>
+    <meta name="revision-id" content="35055"/>
+    <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"/>
+    <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/msaviewer/msaviewer"/>
+    <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4959/edit"/>
+    <meta name="created" content="2015-11-20T12:29:03-05:00"/>
+    <meta name="modified" content="2016-07-05T16:37:11-04:00"/>
+    <meta name="publication-date" content="2015-11-20T12:29:03-05:00"/>
+    <meta name="author" content="frishber"/> 
+    <meta name="subsite" content="msaviewer"/>
+    <meta name="path" content="msaviewer/msaviewer"/>
+    <meta name="node-type" content="resource_home_page"/>
+    <meta name="jira-ticket" content=""/>
+    <meta name="cms-tags" content=""/>
+
+    <!-- User-defined meta tags -->
+    <meta name="&lt;br /&gt;" content=""/>
+        
+    
+    
+
+    <title>NCBI Multiple Sequence Alignment Viewer documentation</title>
+  </head>
+  <body>
+    <div class="node clear-block">
+
+
+
+  <div class="content">
+    <p>
+<img src="/core/assets/msaviewer/images/front-page-header.jpg" alt="Multiple Sequence Alignment Viewer" /></p>
+<p>
+MSA Viewer is a web application that visualizes multiple alignments created by different programs or database search results. It allows to upload alignment, to navigate it, to zoom in and out, to change coloration, and to set master sequence.</p><fieldset class="fieldgroup group-rhp-using"><legend>&#34;Using&#34; Portlet</legend><div class="field field-type-text field-field-rhp-using-title">
+      <div class="field-label">&#34;Using&#34; Title:&#160;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                                          MSA VIEWER                  </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-rhp-using-links">
+      <div class="field-label">&#34;Using&#34; Links:&#160;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                                          <ul>
+<li>
+<a href="/projects/msaviewer/">Multiple Sequence Alignment Viewer application</a></li>
+<li>
+Up to 7 links here</li>
+</ul>                  </div>
+        </div>
+</div>
+</fieldset>
+<fieldset class="fieldgroup group-rhp-tools"><legend>&#34;Tools&#34; Portlet</legend><div class="field field-type-text field-field-rhp-tools-title">
+      <div class="field-label">&#34;Tools&#34; title:&#160;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                                          GENERAL                  </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-rhp-tools-links">
+      <div class="field-label">&#34;Tools&#34; links:&#160;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                                          <ul>
+<li>
+<a href="/tools/msaviewer/about/">About</a></li>
+<li>
+<a href="/tools/msaviewer/embedding-api/">MSA Viewer Embedding API</a></li>
+<li>
+<a href="/tools/msaviewer/release-notes/">Release Notes</a></li>
+<li>
+Up to 7 links here</li>
+</ul>                  </div>
+        </div>
+</div>
+</fieldset>
+<fieldset class="fieldgroup group-rhp-other"><legend>&#34;Other Resources&#34; Portlet</legend><div class="field field-type-text field-field-rhp-other-title">
+      <div class="field-label">&#34;Other Resources&#34; Title:&#160;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                                          HELP                  </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-rhp-other-links">
+      <div class="field-label">&#34;Other Resources&#34; links:&#160;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                                          <ul>
+<li>
+<a href="/tools/msaviewer/faq/">Frequently Asked Questions</a></li>
+<li>
+<a href="/tools/msaviewer/video/">Video Tutorials</a></li>
+<li>
+<a href="/tools/msaviewer/legend/">Legend</a></li>
+<li>
+Up to 7 links here</li>
+</ul>                  </div>
+        </div>
+</div>
+</fieldset>
+<fieldset class="fieldgroup group-rhp-optional"><legend>Optional</legend><div class="field field-type-text field-field-rhp-tier2-content">
+      <div class="field-label">Tier 2 Content:&#160;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                                          <style type="text/css">
+.secondtier_links {
+    overflow: hidden;
+    margin-bottom: 2.8em;
+}</style>
+<div class="secondtier_links">
+<div class="onecol">
+<div class="firsttier_portlet">
+<div class="portlet_head">
+<h2>
+Demo pages</h2>
+</div>
+<div class="portlet_content">
+<ul>
+<li>
+<a href="/projects/msaviewer/demo_static.html">Static Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_dynamic.html">Dynamic Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_sv.html">Interaction with Sequence Viewer</a></li>
+<li>
+<a href="/projects/msaviewer/demo_events.html">Event Handling</a></li>
+<li>
+<a href="/projects/msaviewer/demo_coloring.html">Coloring</a></li>
+<li>
+<a href="/projects/msaviewer/demo_mapping.html">Alignment Coordinate Transformation</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="onecol">
+<div class="firsttier_portlet">
+<div class="portlet_head">
+<h2>
+Tutorials</h2>
+</div>
+<div class="portlet_content">
+<ul>
+<li>
+<a href="/tools/msaviewer/tutorial1/">Getting Started tutorial</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="onecol">
+<div class="firsttier_portlet">
+<div class="portlet_head">
+<h2>
+Other Resources</h2>
+</div>
+<div class="portlet_content">
+<ul>
+<li>
+<a href="/tools/gbench/">Genome Workbench</a></li>
+<li>
+<a href="/projects/sviewer/">Sequence Viewer</a></li>
+<li>
+<a href="/projects/treeview/">Tree Viewer</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>                  </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-rhp-ad-content">
+      <div class="field-label">Ad Content:&#160;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                                          <br />                  </div>
+        </div>
+</div>
+</fieldset>
+  </div>
+
+  
+  </div>
+
+    
+  </body>
+</html>

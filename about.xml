@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- The 'node' is the the content-entity in Drupal. -->
+    <meta name="node-id" content="4960"/>
+    <meta name="revision-id" content="35056"/>
+    <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"/>
+    <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/msaviewer/about"/>
+    <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4960/edit"/>
+    <meta name="created" content="2015-11-20T12:29:40-05:00"/>
+    <meta name="modified" content="2016-07-05T16:38:56-04:00"/>
+    <meta name="publication-date" content="2015-11-20T12:29:00-05:00"/>
+    <meta name="author" content="frishber"/> 
+    <meta name="subsite" content="msaviewer"/>
+    <meta name="path" content="msaviewer/about"/>
+    <meta name="node-type" content="page"/>
+    <meta name="jira-ticket" content=""/>
+    <meta name="cms-tags" content=""/>
+
+    <!-- User-defined meta tags -->
+    <meta name="" content=""/>
+        
+    
+                                    <link type="text/css" rel="stylesheet" href="/core/assets/msaviewer/css/msaviewerdocs.css"/>
+            
+
+    <title>About NCBI MSA Viewer</title>
+  </head>
+  <body>
+    <div class="node clear-block">
+
+
+
+  <div class="content">
+    <h1>
+About the Multiple Sequence Alignment Viewer</h1>
+<p>
+The NCBI Multiple Sequence Alignment Viewer (MSA) is a graphical display for the multiple alignments of nucleotide and protein sequences.</p>
+<p>
+To start using Multiple Sequence Alignment viewer go to the <a href="/projects/msaviewer/">Multiple Sequence Alignment Viewer application</a> page.</p>
+<p>
+Application landing page contains links to multiple examples and demo pages that you can study before aligning data on your own.</p>
+<p>
+We also recommend going through the <a href="/tools/msaviewer/tutorial1/">Getting Started tutorial</a>.</p>
+<p>
+You will get the information on the main features of Multiple Sequence Alignment viewer:</p>
+<ul>
+<li>
+How to load alignment into viewer</li>
+<li>
+How to select sequence</li>
+<li>
+How to select new &#34;master&#34; sequence</li>
+<li>
+How to select coloration method</li>
+<li>
+How to zoom</li>
+<li>
+How to navigate (left/right) along sequence</li>
+</ul>
+<p>
+The Multiple Sequence Alignment Viewer on the web and NCBI&#39;s Genome Workbench are based on the same code libraries and developed by the same team. Researchers looking for more capabilities should check out <a href="/tools/gbench/">Genome Workbench</a>.</p>
+<p>
+Feel free to contact us using the feedback link at the top right of the Multiple Sequence Alignment Viewer page. We really appreciate your feedback.</p>  </div>
+
+  
+  </div>
+
+                                <div id="shared-content-1" nid="4988">                <h2>
+Table of Contents</h2>
+<ul>
+<li><a href="/projects/msaviewer/">Multiple Sequence Alignment Viewer application</a></li>
+<li><a href="/tools/msaviewer/">Documentation home</a></li>
+<li>General
+<ul>
+<li><a href="/tools/msaviewer/about/">About</a></li>
+
+<li>
+<a href="/tools/msaviewer/embedding-api/">MSA Viewer Embedding API</a></li>
+<li>
+<a href="/tools/msaviewer/release-notes/">Release Notes</a></li>
+</ul>
+</li>
+<li>
+Help
+<ul>
+<li>
+<a href="/tools/msaviewer/faq/">Frequently Asked Questions</a></li>
+<li>
+<a href="/tools/msaviewer/video/">Video Tutorials</a></li>
+<li><a href="/tools/msaviewer/legend/">Legend</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+
+<li>
+Demo Pages
+<ul>
+<li>
+<a href="/projects/msaviewer/demo_static.html">Static Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_dynamic.html">Dynamic Embedding</a></li>
+<li>
+<a href="/projects/msaviewer/demo_sv.html">Interaction with Sequence Viewer</a></li>
+<li>
+<a href="/projects/msaviewer/demo_events.html">Event Handling</a></li>
+<li>
+<a href="/projects/msaviewer/demo_coloring.html">Coloring</a></li>
+<li>
+<a href="/projects/msaviewer/demo_mapping.html">Alignment Coordinate Transformation</a></li>
+</ul>
+</li>
+<li>
+Tutorials
+<ul>
+<li>
+<a href="/tools/msaviewer/tutorial1">Getting Started</a></li>
+</ul>
+</li>
+
+<li>
+Other Resources
+<ul>
+<li>
+<a href="/tools/gbench/">Genome Workbench</a></li>
+<li>
+<a href="/projects/sviewer/">Sequence Viewer</a></li>
+<li>
+<a href="/projects/treeview/">Tree Viewer</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+</ul>
+            </div>
+                        
+  </body>
+</html>
