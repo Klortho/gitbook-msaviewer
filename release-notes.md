@@ -1,7 +1,3 @@
-<div class="node clear-block">
-
-<div class="content">
-
 Release Notes for MSA Viewer Version 1.1 (September 27, 2016)
 =============================================================
 
@@ -59,11 +55,7 @@ Bug Fixes
 
 -   As this is the pilot version there are no bugs identified yet
 
-</div>
 
-</div>
-
-<div id="shared-content-1" nid="4988">
 
 Table of Contents
 -----------------
@@ -95,4 +87,3 @@ Table of Contents
     -   [Sequence Viewer](/projects/sviewer/)
     -   [Tree Viewer](/projects/treeview/)
 
-</div>

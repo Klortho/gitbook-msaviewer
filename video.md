@@ -1,7 +1,3 @@
-<div class="node clear-block">
-
-<div class="content">
-
 Basic Features of Genome Workbench {#Basic_Features}
 ==================================
 
@@ -15,11 +11,6 @@ demonstrates the basic functions of the viewer.
 
 ------------------------------------------------------------------------
 
-</div>
-
-</div>
-
-<div id="shared-content-1" nid="4988">
 
 Table of Contents
 -----------------
@@ -51,4 +42,3 @@ Table of Contents
     -   [Sequence Viewer](/projects/sviewer/)
     -   [Tree Viewer](/projects/treeview/)
 
-</div>

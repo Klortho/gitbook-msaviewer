@@ -1,7 +1,3 @@
-<div class="node clear-block">
-
-<div class="content">
-
 Getting Started
 ===============
 
@@ -155,11 +151,7 @@ that now it has **Set master** and **Unset master** options. You can set
 any sequence as a master or unset maser and observe that order of
 sequences was restored.
 
-</div>
 
-</div>
-
-<div id="shared-content-1" nid="4988">
 
 Table of Contents
 -----------------
@@ -191,4 +183,3 @@ Table of Contents
     -   [Sequence Viewer](/projects/sviewer/)
     -   [Tree Viewer](/projects/treeview/)
 
-</div>

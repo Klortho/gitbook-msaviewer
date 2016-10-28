@@ -5,6 +5,6 @@
         <options/>
     </meta>
     <projectTree name="gitbook-msaviewer.xpr">
-        <folder path="."/>
+        <folder path="../"/>
     </projectTree>
 </project>

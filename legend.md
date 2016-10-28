@@ -1,17 +1,8 @@
-<div class="node clear-block">
-
-<div class="content">
-
 Legend
 ======
 
 Under construction
 
-</div>
-
-</div>
-
-<div id="shared-content-1" nid="4988">
 
 Table of Contents
 -----------------
@@ -43,4 +34,3 @@ Table of Contents
     -   [Sequence Viewer](/projects/sviewer/)
     -   [Tree Viewer](/projects/treeview/)
 
-</div>

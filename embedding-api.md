@@ -1,6 +1,3 @@
-<div class="node clear-block">
-
-<div class="content">
 
 NCBI Multiple Sequence Alignment Viewer Embedding API
 =====================================================
@@ -238,11 +235,7 @@ Demo](/projects/msaviewer/demo_sv.html)
 [Alignment Coordinate Transformation
 Demo](/projects/msaviewer/demo_mapping.html)
 
-</div>
 
-</div>
-
-<div id="shared-content-1" nid="4988">
 
 Table of Contents
 -----------------
@@ -274,4 +267,3 @@ Table of Contents
     -   [Sequence Viewer](/projects/sviewer/)
     -   [Tree Viewer](/projects/treeview/)
 
-</div>
