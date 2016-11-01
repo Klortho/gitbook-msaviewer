@@ -2,5 +2,8 @@
   "plugins": [
     "theme-ncbi@0.0.1"
   ],
-  "pluginsConfig": {}
+  "pluginsConfig": {},
+
+  "//": "Set this to true to enable debugging output:",
+  "debug": true
 }
