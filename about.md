@@ -1,4 +1,7 @@
-About the Multiple Sequence Alignment Viewer
+---
+split: drooper
+...
+Aboot the Multiple Sequence Alignment Viewer
 ============================================
 
 The NCBI Multiple Sequence Alignment Viewer (MSA) is a graphical display
